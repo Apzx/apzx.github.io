@@ -21,10 +21,7 @@ angular.module('mainModule').config(function ($stateProvider, $locationProvider)
         controller: 'landingController'
       });
 
-      $locationProvider.html5Mode({
-        enabled: true,
-        requireBase: false
-      });
+      $locationProvider.html5Mode(true);
   });
 
 angular.module('mainModule').run(['$rootScope', function ($rootScope) {
